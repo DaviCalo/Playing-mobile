@@ -9,8 +9,70 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/tela_inicialggo"
-        android:scaleType="fitXY"/>
+        android:src="@drawable/fundo"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gradientfirst"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/inter"
+        android:text="Milhões de músicas na palma \n da sua mão"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/button_cad"
+        app:layout_constraintEnd_toEndOf="@id/button_cad"
+        app:layout_constraintStart_toStartOf="@id/button_cad" />
+
+
+
+    <Button
+        android:id="@+id/button_enter"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="#7046C7"
+        android:fontFamily="@font/inter_bold"
+        android:text="Entrar"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_cad"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#4E4EC7"
+        android:fontFamily="@font/inter_bold"
+        android:text="Cadastre-se"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/button_enter"
+        app:layout_constraintEnd_toEndOf="@id/button_enter"
+        app:layout_constraintStart_toStartOf="@id/button_enter" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
