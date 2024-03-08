@@ -6,30 +6,178 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/background"
+        android:contentDescription="Fundo em gradiente azul escuro e preto"
         android:scaleType="centerCrop"
+
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagelogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:contentDescription="Fundo em gradiente azul escuro e preto"
+
+        android:contentDescription="Logo Playing" />
+
+   <Button
+       android:id="@+id/buttonlogingoogle"
+       android:layout_width="310dp"
+       android:layout_height="52dp"
+       android:backgroundTint="@color/white"
+       android:text="Fazer Login com o Google"
+       android:textColor="@color/black"
+       android:gravity="center_vertical"
+
+       android:paddingStart="80dp"
+       app:layout_constraintTop_toBottomOf="@id/imagelogo"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       />
+
+    <Button
+        android:id="@+id/buttonloginfaceboook"
+        android:layout_width="310dp"
+        android:layout_height="52dp"
+        android:backgroundTint="@color/white"
+        android:text="Fazer Login com o Facebook"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingStart="80dp"
+
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonlogingoogle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="300dp"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonloginfaceboook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/edituser"
+        app:layout_constraintStart_toStartOf="@id/edituser"
+        android:layout_marginBottom="3dp"
+        />
+    <EditText
+        android:id="@+id/edituser"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="@drawable/editbackground"
+        android:hint="Nome do Usuário"
+        android:paddingStart="15dp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/editkey"
+        app:layout_constraintStart_toStartOf="@id/edituser"
+        android:layout_marginBottom="3dp"
+        />
+    <EditText
+        android:id="@+id/editkey"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:background="@drawable/editbackground"
+        android:hint="Senha"
+        android:textStyle="italic"
+        android:paddingStart="15dp"
+        app:layout_constraintTop_toBottomOf="@id/edituser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        />
+
+    <RadioButton
+        android:id="@+id/radiusmim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:text="Lembrar de mim"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/editkey"
+        app:layout_constraintStart_toStartOf="@id/editkey"
+        android:layout_marginTop="5dp"
         />
 
     <Button
-        android:id="@+id/button_enter"
+        android:id="@+id/buttonsign"
         android:layout_width="310dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="80dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
         android:backgroundTint="#7046C7"
         android:fontFamily="@font/inter_bold"
         android:text="Entrar"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiusmim"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastre-se"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/viewdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <View
+        android:id="@+id/viewdown"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:background="@color/white"
+       android:layout_marginBottom="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha?"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/viewdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

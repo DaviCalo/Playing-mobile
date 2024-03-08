@@ -47,7 +47,7 @@
 
 
     <Button
-        android:id="@+id/button_enter"
+        android:id="@+id/buttonsign"
         android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginBottom="80dp"
@@ -70,9 +70,9 @@
         android:text="Cadastre-se"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/button_enter"
-        app:layout_constraintEnd_toEndOf="@id/button_enter"
-        app:layout_constraintStart_toStartOf="@id/button_enter" />
+        app:layout_constraintBottom_toBottomOf="@id/buttonsign"
+        app:layout_constraintEnd_toEndOf="@id/buttonsign"
+        app:layout_constraintStart_toStartOf="@id/buttonsign" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

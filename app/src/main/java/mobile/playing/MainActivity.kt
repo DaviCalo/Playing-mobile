@@ -13,12 +13,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.buttonEnter.setOnClickListener(this)
+        binding.buttonsign.setOnClickListener(this)
+        binding.buttonCad.setOnClickListener(this)
     }
 
-    override fun onClick(v: View) {
-        val intentE = Intent(this, MainActivity2::class.java)
-        startActivity(intentE)
+    override fun onClick(view: View) {
+        if(view.id == R.id.buttonsign){
+            val intentE = Intent(this, MainActivity2::class.java)
+            startActivity(intentE)
+        }
     }
 
 
